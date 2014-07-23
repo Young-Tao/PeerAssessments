@@ -18,6 +18,7 @@ names(tables) <- tableNames
 attach(tables)
 combinedTable <- rbind(X_test, X_train)
 names(combinedTable) <- as.character(features[[2]])
+#
 extractedTable <- cbind("subject" = as.factor(rbind(subject_test, subject_train)[[1]]), 
                         "activity" = as.factor(rbind(y_test, y_train)[[1]]), 
                         combinedTable[,grepl("mean\\(|std\\(", names(combinedTable))])
