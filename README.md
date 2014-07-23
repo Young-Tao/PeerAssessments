@@ -1,6 +1,6 @@
 # Introduction
 
-This repository serves as a part of the *Getting and Cleaning Data Course Project* for peer assesment. Three files are included: 
+This repository serves as a part of the *Getting and Cleaning Data Course Project* for peer assessment. Three files are included: 
 
 - README.md
 - run_analysis.R
@@ -28,7 +28,7 @@ For more information please refer to **Davide Anguita, Alessandro Ghio, Luca One
 
 # Data Cleaning Process
 
-## Sofeware Environment
+## Software Environment
 
 The data are manipulated using R X64 3.1.0 on Windows 8.1 X64.
 
@@ -38,7 +38,7 @@ All codes are in a single script named run_analysis.R. The final tidy data would
 
 ### Import Necessary Package
 
-The only one beyond defalt packages is "plyr". You need to install it in advance.
+The only one beyond default packages is "plyr". You need to install it in advance.
 
 ### Import Necessary Dataset
 
@@ -84,9 +84,10 @@ I use a for loop to replace all keywords with descriptive words.
 
 ### Generate Tidy Dataset
 
-The entire data is ready. According to instructions, we should split the entire data with "subject" and "activity" then apply mean function to get the avarage of each. It is quite straight-forward to use ddply function in "plyr" package. In order to make it tidier, the output content is seperated with "tab" and without row names.
+The entire data is ready. According to instructions, we should split the entire data with "subject" and "activity" then apply mean function to get the average of each. It is quite straight-forward to use ddply function in "plyr" package. In order to make it tidier, the output content is separated with "tab" and without row names.
 
 # Tidy Data Description
 
-The tidy dataset is a txt file with 181 rows(including head) and 68 columns(including "subject" and "activity"). Each entry is the avarage value of variable(indicated by its column name) of a specific activity of a subject.
+The tidy dataset is a txt file with 181 rows(including head) and 68 columns(including "subject" and "activity"). Each entry is the average value of variable(indicated by its column name) of a specific activity of a subject. Since all entries are average values, I leave column names unchanged rather than the word "average" added.
+
 More information could be found in Codebook.md.
