@@ -56,30 +56,29 @@ According to the instruction of the project, all mean and standard deviation are
 
 The name of columns has enough information but not as descriptive as required. It is possible that we interpret them all by human, but more convenient to use computer do this tedious job. We can map keywords and replacements as follows:
 
-------------- | -------------
-"^t" | "timeDomain"
+"^t"-------------"timeDomain"
 
-"^f" | "frequencyDomain"
+"^f"-------------"frequencyDomain"
 
-"-mean\\(" | "MeanValueOf"
+"-mean\\("-------"MeanValueOf"
 
-"-std\\(" | "StandardDeviationOf"
+"-std\\("--------"StandardDeviationOf"
 
-"Mag" | "TheMagnitudeOf"
+"Mag"------------"TheMagnitudeOf"
 
-"Jerk" | "JerkSignalOf"
+"Jerk"-----------"JerkSignalOf"
 
-"BodyAcc" | "BodyLinearAcceleration"
+"BodyAcc"--------"BodyLinearAcceleration"
 
-"GravityAcc" | "GravitionalAcceleration"
+"GravityAcc"-----"GravitionalAcceleration"
 
-"BodyGyro" | "BodyAngularVelocity"
+"BodyGyro"-------"BodyAngularVelocity"
 
-"-X" | "AlongXAxis"
+"-X"-------------"AlongXAxis"
 
-"-Y" | "AlongYAxis"
+"-Y"-------------"AlongYAxis"
 
-"-Z" | "AlongZAxis"
+"-Z"-------------"AlongZAxis"
 
 I use a for loop to replace all keywords with descriptive words.
 
