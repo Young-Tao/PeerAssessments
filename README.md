@@ -1,6 +1,6 @@
 # Introduction
 
-This repository serves as a part of the *Getting and Cleaning Data Course Project* for peer assessment. Three files are included: 
+This repository serves as a part of the **Getting and Cleaning Data Course Project** for peer assessment. Three files are included: 
 
 - README.md
 - run_analysis.R
@@ -24,7 +24,7 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-For more information please refer to **Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012**. The raw data are available at **http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones**.
+For more information please refer to *Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012*. The raw data are available at *http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones*.
 
 # Data Cleaning Process
 
@@ -56,29 +56,30 @@ According to the instruction of the project, all mean and standard deviation are
 
 The name of columns has enough information but not as descriptive as required. It is possible that we interpret them all by human, but more convenient to use computer do this tedious job. We can map keywords and replacements as follows:
 
-"^t"--"timeDomain"
+------------- | -------------
+"^t" | "timeDomain"
 
-"^f"--"frequencyDomain"
+"^f" | "frequencyDomain"
 
-"-mean\\("--"MeanValueOf"
+"-mean\\(" | "MeanValueOf"
 
-"-std\\("--"StandardDeviationOf"
+"-std\\(" | "StandardDeviationOf"
 
-"Mag"--"TheMagnitudeOf"
+"Mag" | "TheMagnitudeOf"
 
-"Jerk"--"JerkSignalOf"
+"Jerk" | "JerkSignalOf"
 
-"BodyAcc"--"BodyLinearAcceleration"
+"BodyAcc" | "BodyLinearAcceleration"
 
-"GravityAcc"--"GravitionalAcceleration"
+"GravityAcc" | "GravitionalAcceleration"
 
-"BodyGyro"--"BodyAngularVelocity"
+"BodyGyro" | "BodyAngularVelocity"
 
-"-X"--"AlongXAxis"
+"-X" | "AlongXAxis"
 
-"-Y"--"AlongYAxis"
+"-Y" | "AlongYAxis"
 
-"-Z"--"AlongZAxis"
+"-Z" | "AlongZAxis"
 
 I use a for loop to replace all keywords with descriptive words.
 
