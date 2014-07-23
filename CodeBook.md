@@ -1,9 +1,14 @@
-## subject                                                                           
+# CodeBook For tidyTable
+
+#### subject
+
+>The Number of 
+                                                                           
 ## activity                                                                          
 ## timeDomainMeanValueOfBodyLinearAccelerationAlongXAxis                             
-## timeDomainMeanValueOfBodyLinearAccelerationAlongYAxis                             
-## timeDomainMeanValueOfBodyLinearAccelerationAlongZAxis                             
-## timeDomainStandardDeviationOfBodyLinearAccelerationAlongXAxis                     
+### timeDomainMeanValueOfBodyLinearAccelerationAlongYAxis                             
+#### timeDomainMeanValueOfBodyLinearAccelerationAlongZAxis                             
+##### timeDomainStandardDeviationOfBodyLinearAccelerationAlongXAxis                     
 ## timeDomainStandardDeviationOfBodyLinearAccelerationAlongYAxis                     
 ## timeDomainStandardDeviationOfBodyLinearAccelerationAlongZAxis                     
 ## timeDomainMeanValueOfGravitionalAccelerationAlongXAxis                            
